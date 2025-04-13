@@ -31,6 +31,12 @@ header {
             display: grid;
             grid-template-columns: 1fr 10fr;
             gap: 5px;
+            input{
+                border-radius: 0;
+            }
+            button{
+                border-radius:0;
+            }
 
             select {
                 width: fit-content;

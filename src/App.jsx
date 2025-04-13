@@ -7,6 +7,13 @@ function App() {
   return (
     <>
       <Header />
+      <section>
+        <div class="conatiner">
+          <div class="banner">
+            This is Home
+          </div>
+        </div>
+      </section>
       <Footer />
     </>
   )

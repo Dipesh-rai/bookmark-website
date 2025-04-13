@@ -1,16 +1,16 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 function Category() {
     return (
         <ul>
-            <li><a href="">Categories</a></li>
-            <li><a href="">Real Estate</a></li >
-            <li><a href="">Jobs</a ></li >
-            <li><a href="">Services</a ></li >
-            <li><a href="">Vehicles</a ></li >
-            <li><a href="">Electronics</a ></li >
-        </ul >
-    )
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/real-estate"> Real-estate</Link></li >
+            <li><Link to="/jobs"> Jobs</Link></li >
+            <li><Link to="/blogs"> Blogs</Link></li >
+            <li><Link to="/news"> News</Link></li >
+            <li><Link to="/contact"> Contact</Link></li>
+    </ul >
+  )
 }
 
 export default Category

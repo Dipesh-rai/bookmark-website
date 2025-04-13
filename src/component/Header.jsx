@@ -14,7 +14,7 @@ function Header() {
                 <option value="">Setting 2</option>
                 <option value="">Setting 3</option>
               </select>
-              <label for="">Currency:</label>
+              <label for="#">Currency:</label>
               <select name="" className='select-headerpart' id="">
                 <option value="">USD</option>
                 <option value="">RS</option>
@@ -38,12 +38,12 @@ function Header() {
 
 
             </div>
-            <div class="right-content">
-              <div class="dropdown d-flex gap-2">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="bi bi-cart-check-fill"></i>
+            <div className="right-content">
+              <div className="dropdown d-flex gap-2">
+                <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i className="bi bi-cart-check-fill"></i>
                 </button>
-                <div class="dropdown-menu">
+                <div className="dropdown-menu">
                   <li className='d-flex'><img src="file:///C:/Users/User/Downloads/limupa-digital-products-store-ecommerce/limupa-digital-products-store-ecommerce/images/product/small-size/5.jpg" alt=""/></li>
                 </div>
                 <a href="" type="button" className="btn btn-outline-primary">Login</a>
