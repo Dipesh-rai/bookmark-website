@@ -1,0 +1,72 @@
+header {
+    .topheader {
+        background-color: var(--background-color);
+        font-size: 13px;
+        font-family: var(--primary-fonts);
+        color: white;
+
+        label {
+            border-left: 1px solid black;
+            padding-left: 5px;
+        }
+
+        select {
+            background-color: transparent;
+            border: none;
+            color: white;
+
+        }
+
+    }
+
+    .second-header {
+        .logo {
+            font-size: var(--font-xl);
+            font-weight: 700;
+            line-height: 30px;
+        }
+
+        .search {
+            margin-left: 50px;
+            display: grid;
+            grid-template-columns: 1fr 10fr;
+            gap: 5px;
+
+            select {
+                width: fit-content;
+            }
+        }
+    }
+
+    .third-header {
+        background-color: var(--background-color);
+
+        .right-header {
+            gap: 100px;
+            margin: 0;
+
+            ul {
+                padding: 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 0;
+                gap: 120px;
+
+                li {
+                    padding: 10px 5px;
+                    color: white;
+                    font-size: var(--font-lg);
+
+                    &:hover {
+                        background-color: var(--primary-color);
+                    }
+
+                    a {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
