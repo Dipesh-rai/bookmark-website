@@ -1,0 +1,16 @@
+.property{
+    background-color:var(--white-color);
+    padding:20px;
+    .dream-property{
+        height:300px;
+        width:50%;
+        .property-items{
+            margin-block:auto;
+        }
+      
+    }
+    .search-property{
+        width:50%;
+        background-color:#FFFFFF;
+    }
+}

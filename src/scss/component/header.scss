@@ -6,7 +6,7 @@ header {
         color: white;
 
         label {
-            border-left: 1px solid black;
+            border-left: 1px solid white;
             padding-left: 5px;
         }
 
@@ -29,10 +29,14 @@ header {
         .search {
             margin-left: 50px;
             display: grid;
-            grid-template-columns: 1fr 10fr;
-            gap: 5px;
+            grid-template-columns: 1fr 11fr;
+            width:600px;
+            .search-input{
+                width:100%;
+            }
             input{
                 border-radius: 0;
+                width:100%;
             }
             button{
                 border-radius:0;
@@ -40,6 +44,8 @@ header {
 
             select {
                 width: fit-content;
+                border-radius:0;
+                font-size:var(--font-lg);
             }
         }
     }
@@ -76,3 +82,110 @@ header {
         }
     }
 }
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    header {
+        .topheader {
+            background-color: var(--background-color);
+            font-size: 13px;
+            font-family: var(--primary-fonts);
+            color: white;
+    
+            label {
+                border-left: 1px solid white;
+                padding-left: 5px;
+            }
+    
+            select {
+                background-color: transparent;
+                border: none;
+                color: white;
+    
+            }
+    
+        }
+    
+        .second-header {
+            .logo {
+                font-size: var(--font-xl);
+                font-weight: 700;
+                line-height: 30px;
+            }
+    
+            .search {
+                margin-left: 50px;
+                display: grid;
+                grid-template-columns: 1fr 11fr;
+                width:600px;
+                .search-input{
+                    width:100%;
+                }
+                input{
+                    border-radius: 0;
+                    width:100%;
+                }
+                button{
+                    border-radius:0;
+                }
+    
+                select {
+                    width: fit-content;
+                    border-radius:0;
+                    font-size:var(--font-lg);
+                }
+            }
+        }
+    
+        .third-header {
+            background-color: var(--background-color);
+    
+            .right-header {
+                gap: 100px;
+                margin: 0;
+    
+                ul {
+                    padding: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 0;
+                    gap: 120px;
+    
+                    li {
+                        padding: 10px 5px;
+                        color: white;
+                        font-size: var(--font-lg);
+    
+                        &:hover {
+                            background-color: var(--primary-color);
+                        }
+    
+                        a {
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+
+ }
+// small devices (moibile, 576px and up)
+@media (min-width: 576px) { 
+
+ }
+
+
+
+
+
+
