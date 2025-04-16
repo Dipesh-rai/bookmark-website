@@ -44,7 +44,7 @@ const feature = {
   },
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 3
+    items: 5
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
@@ -55,6 +55,29 @@ const feature = {
     items: 1
   }
 };
+
+// testimonial
+const testimonial = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 2
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 2
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1
+  }
+};
+
+
 function App() {
 
 
@@ -111,7 +134,7 @@ function App() {
         <div className="container">
           <div className="category-heading d-flex justify-content-between">
 
-               Homes
+            Homes
           </div>
           <div className="tab-content mt-3" id="myTabContent">
             <div className="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
@@ -159,8 +182,8 @@ function App() {
                 </div>
 
               </Carousel>
-        </div>
-        </div>
+            </div>
+          </div>
         </div>
 
       </section>
@@ -170,19 +193,19 @@ function App() {
       <section className="add my-3">
         <div className="container">
           <div className="row align-items-center">
-          <article className='col-lg-8'>
-            <h2>Ready to Post your Add</h2>
-            <div className='add-text'>Join thousands of users who find what they need on AdSpot every day.</div>
+            <article className='col-lg-8'>
+              <h2>Ready to Post your Add</h2>
+              <div className='add-text'>Join thousands of users who find what they need on AdSpot every day.</div>
             </article>
             <div className='col-lg-4 text-lg-end'>
-          <button type="button" className="btn btn-light">Post Your add</button>
-        </div>
-        </div>
+              <button type="button" className="btn btn-light">Post Your add</button>
+            </div>
+          </div>
         </div>
       </section>
 
 
-      <section className="feature my-3">
+      <section className="apartment my-3">
         <div className="container">
           <div className="category-heading d-flex justify-content-between">
             <div className='heading-title'>Apartments</div>
@@ -244,22 +267,22 @@ function App() {
                 <a href="#" className="btn btn-primary">Go somewhere</a>
               </div>
             </div>
-            </Carousel>
-          </div>
+          </Carousel>
+        </div>
       </section>
 
 
       <section className="add my-3">
         <div className="container">
           <div className="row align-items-center">
-          <article className='col-lg-8'>
-            <h2>Ready to Post your Add</h2>
-            <div className='add-text'>Join thousands of users who find what they need on AdSpot every day.</div>
+            <article className='col-lg-8'>
+              <h2>Ready to Post your Add</h2>
+              <div className='add-text'>Join thousands of users who find what they need on AdSpot every day.</div>
             </article>
             <div className='col-lg-4 text-lg-end'>
-          <button type="button" className="btn btn-light">Post Your add</button>
-        </div>
-        </div>
+              <button type="button" className="btn btn-light">Post Your add</button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -297,93 +320,157 @@ function App() {
         </div>
       </section>
 
-      <section className="add my-3">
-      </section>
+    <section className="add my-3">
+    <div className="container">
+      <div className="row align-items-center">
+        <article className='col-lg-8'>
+          <h2>Ready to Post your Add</h2>
+          <div className='add-text'>Join thousands of users who find what they need on AdSpot every day.</div>
+        </article>
+        <div className='col-lg-4 text-lg-end'>
+          <button type="button" className="btn btn-light">Post Your add</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
       <section className="blog my-3">
         <div className="container">
           <div className="category-heading d-flex justify-content-between">
             <div className='heading-title'>Blog</div>
-            <select name="" id="" className='selection'>
-              <option value="">All items</option>
-            </select>
+            <div className="adda">Add</div>
+
           </div>
           <div className="blog-articles my-3">
-            <div className="card card-first">
-              <img src="..." className="card-img-top" alt="..." />
+            <div className=" card card-first">
+              <img src="https://plus.unsplash.com/premium_photo-1682434403587-1313db01ed02?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmxvZ3N8ZW58MHx8MHx8fDA%3D" className="card-img-top" alt="..." />
               <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 className="card-title py-2">Card title</h5>
+                <div className="d-flex gap-3 py-3">
+                  <div class="blog-admin">
+                  <a href=""><i class="bi bi-person-fill"></i>
+                    <span>  Admin</span></a>
+                  </div>
+                  <div class="blog-admin">
+                  <a href=""><i class="bi bi-chat"></i>
+                    <span>  Comment</span></a>
+                  </div>
+                  <div class="blog-admin">
+                  <a href=""><i class="bi bi-calendar3"></i>
+                    <span>  Calender</span></a>
+                    </div>
+                </div>
+                <p className="card-text py-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <a href="#" className="btn btn-primary">Go somewhere</a>
               </div>
             </div>
-            <div className="card">
-              <img src="..." className="card-img-top" alt="..." />
+            <div className="card card-second">
+              <img src="https://plus.unsplash.com/premium_photo-1674406481284-43eba097a291?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGFkZHxlbnwwfHwwfHx8MA%3D%3D" className="card-img-top" alt="..." />
               <div className="card-body">
                 <h5 className="card-title">Card title</h5>
+               
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
+                <a href="#" className="btn btn-primary">Add</a>
               </div>
             </div>
-            <div className="card">
-              <img src="..." className="card-img-top" alt="..." />
+            <div className="card card-second">
+              <img src="https://plus.unsplash.com/premium_photo-1664475347754-f633cb166d13?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YWRkfGVufDB8fDB8fHww" className="card-img-top" alt="..." />
               <div className="card-body">
                 <h5 className="card-title">Card title</h5>
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
+                <a href="#" className="btn btn-primary">Add</a>
               </div>
             </div>
-            <div className="card">
-              <img src="..." className="card-img-top" alt="..." />
+            <div className="card card-second">
+              <img src="https://images.unsplash.com/photo-1625296276397-3bc8839c688f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGFkZHxlbnwwfHwwfHx8MA%3D%3D" className="card-img-top" alt="..." />
               <div className="card-body">
                 <h5 className="card-title">Card title</h5>
+               
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
+                <a href="#" className="btn btn-primary">Add</a>
               </div>
             </div>
-            <div className="card">
-              <img src="..." className="card-img-top" alt="..." />
+            <div className="card card-second">
+              <img src="https://media.istockphoto.com/id/1372048548/photo/professional-cook-hold-saltcellar-and-add-salt-to-soup-against-kitchen-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=rOnmBF_rSmKzrEIbEWViVLxNxN0OWTaOzPbPe39b7b4=" className="card-img-top" alt="..." />
               <div className="card-body">
                 <h5 className="card-title">Card title</h5>
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
+                <a href="#" className="btn btn-primary">Add</a>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="add my-3">
-      </section>
+      
+    <section className="add my-3">
+    <div className="container">
+      <div className="row align-items-center">
+        <article className='col-lg-8'>
+          <h2>Ready to Post your Add</h2>
+          <div className='add-text'>Join thousands of users who find what they need on AdSpot every day.</div>
+        </article>
+        <div className='col-lg-4 text-lg-end'>
+          <button type="button" className="btn btn-light">Post Your add</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <section className="news my-3">
+      <section className="testimonial my-3">
         <div className="container">
           <div className="category-heading d-flex justify-content-between">
             <div className='heading-title'>Testimonial</div>
           </div>
-          <div className="d-flex gap-3 my-3">
-            <div className="card">
-              <img src="..." className="card-img-top" alt="..." />
+            
+            <Carousel responsive={testimonial}>
+               <div className="card">
+              <img src="https://images.unsplash.com/photo-1654723011763-a1602273e7ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dGVzdGltb25pYWx8ZW58MHx8MHx8fDA%3D" className="card-img-top" alt="..." />
               <div className="card-body">
-                <h5 className="card-title">Card title</h5>
+                <h5 className="card-title">John</h5>
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
               </div>
             </div>
-            <div className="card">
-              <img src="..." className="card-img-top" alt="..." />
+             <div className="card">
+              <img src="https://images.unsplash.com/photo-1654723011763-a1602273e7ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dGVzdGltb25pYWx8ZW58MHx8MHx8fDA%3D" className="card-img-top" alt="..." />
               <div className="card-body">
-                <h5 className="card-title">Card title</h5>
+                <h5 className="card-title">Johnn</h5>
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
               </div>
             </div>
+              <div className="card">
+              <img src="https://images.unsplash.com/photo-1654723011763-a1602273e7ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dGVzdGltb25pYWx8ZW58MHx8MHx8fDA%3D" className="card-img-top" alt="..." />
+              <div className="card-body">
+                <h5 className="card-title">Johnnn</h5>
+                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+              <div className="card">
+              <img src="https://images.unsplash.com/photo-1654723011763-a1602273e7ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dGVzdGltb25pYWx8ZW58MHx8MHx8fDA%3D" className="card-img-top" alt="..." />
+              <div className="card-body">
+                <h5 className="card-title">Johnnnn</h5>
+                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+           
+              </Carousel>
+           
           </div>
-        </div>
       </section>
 
-      <section className="add my-3">
-      </section>
+       <section className="add my-3">
+    <div className="container">
+      <div className="row align-items-center">
+        <article className='col-lg-8'>
+          <h2>Ready to Post your Add</h2>
+          <div className='add-text'>Join thousands of users who find what they need on AdSpot every day.</div>
+        </article>
+        <div className='col-lg-4 text-lg-end'>
+          <button type="button" className="btn btn-light">Post Your add</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
       <Footer />
     </>
