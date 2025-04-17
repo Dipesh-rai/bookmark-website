@@ -4,23 +4,33 @@
         display: grid;
         grid-template-columns:8fr 4fr;
         grid-template-rows: 200px 200px;
-        gap: 10px;
+        gap: 5px 10px;
 
         .react-multi-carousel-list  {
             grid-row: 2 span;
             .banner-part{
-            position:relative;
-                .banner-items{
-                    position:absolute;
-                    top:50%;
-                    left:50%;
-                    transform: translateX(-50%);
-
+                .card-banner{
+                    position:relative;
+                    padding:10px;
+                    img{
+                        height:380px;
+                    }
+                    .banner-items{
+                        position:absolute;
+                        top:50%;
+                        left:50%;
+                        transform: translateX(-50%);
+    
+                    }
                 }
-            }
+                }
+         
         }
         .side-banner {
             position:relative;
+            img{
+                height:170px;
+            }
             .side-article{
                 position:absolute;
                 top:50%;
@@ -28,11 +38,36 @@
                 transform: translateX(-50%);
                 color:black;
                 font-weight:500;
-
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                color:white;
+                button{
+                    margin-inline: auto;
+                    font-size:var(--font-md);
+                }
 
             }
         }
     }
+    
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) { 
+    width:100%;
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) { 
+    width:100%
+ }
+// small devices (moibile, 576px and up)
+@media (max-width: 576px) { 
+    width:100%;
+    .banner-article{
+        grid-template-columns: 1fr;
+    }
+ }
 }
 .category {
     .nav{

@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+*::before,
+*::after {
+  box-sizing: border-box;
+  max-width: 100%;
+}
 
 img {
     width: 100%;
@@ -19,11 +24,39 @@ a {
     color: inherit;
 }
 
-body {
-    font-size: 16px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0; /* Ensure no margin */
+    padding: 0; /* Ensure no padding */
+    overflow-x: hidden; /* Prevent horizontal overflow */
     font-family: var(--primary-fonts);
     background-color: var(--white-color);
-}
+  }
+  
+  body {
+    font-size: 16px; /* Default font size */
+    
+    // Responsive font sizes for different screen widths
+    @media (max-width: 992px) { 
+      font-size: 14px; /* Font size for larger tablets and below */
+    }
+    
+    @media (max-width: 768px) { 
+      font-size: 13px; /* Font size for medium tablets and below */
+    }
+  
+    @media (max-width: 576px) { 
+      font-size: 12px; /* Font size for smaller mobile screens */
+    }
+  }
+  
 
 p {
     margin-bottom: 0;
@@ -59,3 +92,41 @@ p {
         /* slight lift */
     }
 }
+
+ .row, .col, .section, .search, .search-input {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  /* This part makes sure the full-width container is nice and spacious on large screens */
+.container {
+    width: 100%;
+    margin: 0 auto;  /* Centering content */
+    padding: 0 20px; /* Default space on both sides for larger screens */
+  }
+  
+  /* Now, let's deal with the responsiveness and remove space for smaller screens */
+  
+  @media (max-width: 1200px) {
+    .container {
+      padding: 0 15px; /* Slight space for larger tablets or small screens */
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .container {
+      padding: 0 10px; /* Reducing space even more */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 5px; /* Almost no space */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .container {
+      padding: 0 5px; /* Completely remove the space for mobile */
+    }
+  }
+  

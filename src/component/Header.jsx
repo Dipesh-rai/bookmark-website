@@ -54,7 +54,7 @@ function Header() {
               </div>
 
 
-            </div>
+            </div>        
             <div className="right-content">
               <div className="dropdown d-flex gap-2">
                 <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -68,7 +68,8 @@ function Header() {
       </div>
       <div className="third-header">
         <div className="container">
-          <div className="right-header d-flex justify-contnet-center">
+          <div className="right-header d-flex justify-content-between">
+          
             <Navbar />
 
           </div>
