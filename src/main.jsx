@@ -16,6 +16,9 @@ import Jobs from "./pages/Jobs.jsx";
 import Blog from "./pages/Blog.jsx";
 import News from "./pages/News.jsx";
 import Contact from "./pages/Contact.jsx";
+import Login from "./component/Login.jsx";
+import Register from "./component/Register.jsx";
+import Inner from "./pages/products/Inner.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -41,6 +44,18 @@ const router = createBrowserRouter([
     path: "/contact",
     element: <Contact />,
   },
+  {
+    path: "/login",
+    element:<Login />
+  },
+  {
+    path: "/register",
+    element:<Register />
+  },
+  {
+    path: "/*",
+    element:<Inner />
+  }
 ]);
 
 createRoot(document.getElementById('root')).render(

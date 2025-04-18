@@ -1,0 +1,31 @@
+.login {
+    height: 100vh;
+    position: relative;
+
+    h1 {
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .log {
+        position: absolute;
+        width: 500px;
+        padding: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .login-border {
+
+            padding: 20px;
+
+           
+        }
+    }
+    .account-create{
+        color:grey;
+        &:hover{
+            color:black;
+        }
+    }
+}
